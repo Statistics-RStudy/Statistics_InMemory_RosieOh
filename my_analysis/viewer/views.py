@@ -1,5 +1,7 @@
-import nbformat
+import os  # 추가
 from django.shortcuts import render
+from django.conf import settings 
+import nbformat  
 
 def notebook_results_view(request):
     # Notebook 파일 경로
